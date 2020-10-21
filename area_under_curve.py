@@ -10,10 +10,10 @@ def trapezoidal_rule(y):
     result = 0
     for i in range(size_of_y):
         if i != 0 and i != size_of_y - 1:
-            result = result + 2*y[i]
+            result += 2*y[i]
         else:
-            result = result + y[i]
-    result = result * (change_in_x / 2)
+            result += y[i]
+    result *= (change_in_x / 2)
     return result
 
 
